@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body {
+    background-color: black;
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (min-width: 601px) {
+    #titleText {
+        font-size: 50px;
+        text-align: center;
+        padding-top: 5%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #titleText {
+        font-size: 5vw;
+        text-align: center;
+        padding-top: 5%;
+    }
+}
+
+#info {
+    text-align: center;
+
+}
+
+a {
+    color: aqua;
+}
+
+#TriangleContainer {
+    padding-top: 2%;
+    font-size: xx-large;
+    text-align: center;
+    line-height: 140%;
+    word-spacing: 1%;
+}

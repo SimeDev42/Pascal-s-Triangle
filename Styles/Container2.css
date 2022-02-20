@@ -1,0 +1,22 @@
+@media screen and (min-width: 1319px){
+    #dataContainer {
+
+        padding: 0%;
+        margin: auto;
+        display: inline-flex;
+        width: auto;
+    
+    }
+}
+@media screen and (max-width: 1319px){
+    #dataContainer {
+
+        padding: 0%;
+        margin: auto;
+        display: inline-flex;
+        width: 95%;
+        padding-top: 2.5%;
+        text-align: center;
+    
+    }
+}
