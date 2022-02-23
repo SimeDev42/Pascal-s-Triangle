@@ -38,3 +38,37 @@ a {
     line-height: 140%;
     word-spacing: 1%;
 }
+
+#inputContainer {
+    width: auto;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items:center;
+    font-size: xx-large;
+}
+
+#inputText {
+    font-size: large;
+    text-align: right;
+}
+
+#inputValue {
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 5px;
+    border: 2px solid white;
+    margin-inline: 0.5%;
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: medium;
+    width: 100px;
+    margin-left: 0%;
+    margin-right: 0.5vw;
+    padding: 0%;
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 6px;
+}

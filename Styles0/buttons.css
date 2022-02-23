@@ -1,0 +1,41 @@
+#Buttons {
+    display: flex;
+    width: 50%;
+    height: 10vw;
+    margin: auto;
+    padding-top: 2.5%;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 1144px){
+    #Buttons button {
+        margin: 1%;
+        height: 15vw;
+        width: 50%;
+    
+        border-radius: 10px;
+        border: 2px solid white;
+    
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3vw;
+    }
+}
+
+@media screen and (min-width: 1145px){
+    #Buttons button {
+        margin: 1%;
+        height: 100%;
+        width: 50%;
+    
+        border-radius: 10px;
+        border: 2px solid white;
+    
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        font-size: xx-large;
+    }
+}
+
+

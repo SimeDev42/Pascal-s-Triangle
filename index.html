@@ -4,33 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pascal's triangle</title>
-    <script src="main.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="Styles/Container1.css">
-    <link rel="stylesheet" href="Styles/Container2.css">
-    <link rel="stylesheet" href="Styles/Text1.css">
-    <link rel="stylesheet" href="Styles/input.css">
-    <link rel="stylesheet" href="Styles/buttons.css">
-
+    <title>Pascal's Triangle</title>
+    <link rel="stylesheet" href="Styles0/style.css">
+    <link rel="stylesheet" href="Styles0/buttons.css">
+    <script src="main0.js"></script>
 </head>
 <body>
-    <h1 id="titleText">Pascal's triangle</h1>
 
-    <div id="info">
-        <p>More info <a href="https://en.wikipedia.org/wiki/Pascal%27s_triangle">here</a></p>
+    <h1 id="titleText">Binomial Solver</h1>
+    <p>Made by SimeDev42</p>
+
+    <div id="Buttons">
+        <button id="BT1" onclick="OpenCreator()">Pascal's Triangle Creator</button>
+        <button id="BT2" onclick="OpenSolver()">Binomial Solver</button>
     </div>
-
-    <div id="inputContainer">
-        <p id="inputText">Enter how many rows do you want: </p>
-        <div id="dataContainer">
-            <input id="inputValue" type="number">
-            <button id="createBt" onclick="createTriangle()">Create</button>
-            <button id="eraseBt" onclick="eraseScreen()">Erase screen</button>
-        </div>
-    </div>
-
-    <div id="TriangleContainer"></div>
+    
     
 </body>
 </html>

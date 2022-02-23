@@ -1,5 +1,11 @@
 function createTriangle(){
 
+    let i = document.getElementById("TriangleContainer")
+    i.remove()
+    div = document.createElement("div");
+    document.body.appendChild(div);
+    div.setAttribute("id", "TriangleContainer");
+
     let rows = parseInt(document.getElementsByTagName("input")[0].value) - 1
     let arrays = ["1"];
     let last_row = ["1"];
@@ -13,28 +19,11 @@ function createTriangle(){
             } 
         }
         current_row.push("\xa01");
-        
-        // let arrows = ["/\\"];
-        // if (last_row.length > 1){
-        //     for (let i = 0; i < last_row.length - 2; i++){
-        //         arrows.push("/\\");
-        //     }
-        //     arrows.push("/\\");
-        // }
-        // arrays.push(arrows);
         arrays.push(current_row);
         last_row = current_row;
     }
     
     addTriangleToScreen(arrays);
-}
-
-function eraseScreen(){
-    let i = document.getElementById("TriangleContainer")
-    i.remove()
-    div = document.createElement("div");
-    document.body.insertBefore(div, document.getElementsByTagName("footer")[0]);
-    div.setAttribute("id", "TriangleContainer");
 }
 
 function addTriangleToScreen(array){
