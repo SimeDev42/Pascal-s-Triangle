@@ -1,7 +1,7 @@
 function createTriangle(){
 
-    let i = document.getElementById("TriangleContainer")
-    i.remove()
+    let i = document.getElementById("TriangleContainer");
+    i.remove();
     div = document.createElement("div");
     document.body.appendChild(div);
     div.setAttribute("id", "TriangleContainer");
