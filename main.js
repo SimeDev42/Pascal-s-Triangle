@@ -6,7 +6,7 @@ function createTriangle(){
     document.body.appendChild(div);
     div.setAttribute("id", "TriangleContainer");
 
-    let rows = parseInt(document.getElementsByTagName("input")[0].value) - 1
+    let rows = parseInt(document.getElementsByTagName("input")[0].value) - 1;
     let arrays = ["1"];
     let last_row = ["1"];
     for (let x = 0; x < rows; x++){
@@ -30,7 +30,7 @@ function addTriangleToScreen(array){
     for(let x = 0; x < array.length; x++){
         let text = "";
         for (let y = 0; y < array[x].length; y++){
-            text += array[x][y] + " "
+            text += array[x][y] + " ";
         }
         let textObj = document.createTextNode(text);
         let br = document.createElement("br");

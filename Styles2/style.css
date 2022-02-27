@@ -39,7 +39,6 @@ a {
         justify-content: center;
         align-items:center;
         font-size: xx-large;
-        text-align: center;
     }
 }
 @media screen and (max-width: 709px){
@@ -52,7 +51,6 @@ a {
         justify-content: center;
         align-items:center;
         font-size: xx-large;
-        text-align: center;
      }
 }
 
