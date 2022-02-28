@@ -5,10 +5,21 @@ let link = "https://pascal-s-triangle-api.anvil.app/_/api"
 function GetExpression(){
     a = document.getElementById("mon1").value;
     b = document.getElementById("mon2").value;
-    n = document.getElementById("exp").value;
-
-    if (String(a).replace(" ", "") != "" && String(b).replace(" ", "") != "" && exp > 0 && exp != NaN && exp < 101){
+    n = parseInt(document.getElementById("exp").value);
+    console.log(String(a).replace(" ", ""));
+    console.log(String(b).replace(" ", ""));
+    console.log(n);
+    if (String(a).replace(" ", "") != "" && String(b).replace(" ", "") != "" && n > 0 && n != NaN && n < 101){
         httpGetAsync(link + "/get_formula_at_exp?n=" + n, GotFormula);
+
+        let i = document.getElementById("InstructionsContainer");
+        i.remove();
+        div = document.createElement("div");
+        document.body.appendChild(div);
+        div.setAttribute("id", "InstructionsContainer");
+
+        let formulaObj = document.createTextNode("Loading...");
+        document.getElementById("InstructionsContainer").appendChild(formulaObj);
     }
 
 }
@@ -64,7 +75,7 @@ function ShowDownArrow(){
     document.getElementById("InstructionsContainer").appendChild(br);
 }
 
-function httpGetAsync(theUrl, callback)
+function httpGetAsync(theUrl, callback, errorCallback)
 {
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.onreadystatechange = function() { 

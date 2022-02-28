@@ -11,15 +11,23 @@ function createTriangle(){
     div.setAttribute("id", "TriangleContainer");
 
     n = document.getElementsByTagName("input")[0].value;
-    console.log(n.value)
+
     if (n > 0 && n != NaN && n < 101){
         httpGetAsync(link + "/get_triangle_at_exp?n=" + n, GotTriangle);
+
+        let i = document.getElementById("TriangleContainer");
+        i.remove();
+        div = document.createElement("div");
+        document.body.appendChild(div);
+        div.setAttribute("id", "TriangleContainer");
+
+        let formulaObj = document.createTextNode("Loading...");
+        document.getElementById("TriangleContainer").appendChild(formulaObj);
     }
     
 }
 
 function GotTriangle(data){
-    console.log(data);
     let obj = JSON.parse(data);
     addTriangleToScreen(obj.triangle);
 }
@@ -37,7 +45,7 @@ function addTriangleToScreen(array){
     }
 }
 
-function httpGetAsync(theUrl, callback)
+function httpGetAsync(theUrl, callback, errorCallback)
 {
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.onreadystatechange = function() { 
