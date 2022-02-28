@@ -7,7 +7,7 @@ function GetExpression(){
     b = document.getElementById("mon2").value;
     n = document.getElementById("exp").value;
 
-    if (String(a).replace(" ", "") != "" && String(b).replace(" ", "") != "" && exp != 0 && exp != NaN){
+    if (String(a).replace(" ", "") != "" && String(b).replace(" ", "") != "" && exp > 0 && exp != NaN && exp < 101){
         httpGetAsync(link + "/get_formula_at_exp?n=" + n, GotFormula);
     }
 
