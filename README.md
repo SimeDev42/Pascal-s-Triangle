@@ -33,3 +33,8 @@ Examples:
 - If I want to get the solution of (a^2+1)^3 I will do a GET request to https://pascal-s-triangle-api.anvil.app/_/api/solve?a=a^2&b=1&n=3
 - If I want to get formula of the cube of a binomial I will do a GET request to https://pascal-s-triangle-api.anvil.app/_/api/get_formula_at_exp?n=3
 - If I want to get the Pascal's triangle all the way to the 5th row I will do a GET request to https://pascal-s-triangle-api.anvil.app/_/api/get_triangle_at_exp?n=5
+
+
+<b>Note: the API can't solve powers of bionomials with fractions: it will just throw an error or an incorrect result</b>
+
+<b>Note: this is still a BETA version so there might be some bugs. If you find one please report it in the Issues tab. Thanks.</b>
