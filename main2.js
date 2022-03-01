@@ -39,6 +39,18 @@ function GotSolved(text){
 
 function ShowDataOnScreen(f, s){
 
+    if (f == 500 || s == 500){
+        let i = document.getElementById("InstructionsContainer");
+        i.remove();
+        div = document.createElement("div");
+        document.body.appendChild(div);
+        div.setAttribute("id", "InstructionsContainer");
+
+        let formulaObj = document.createTextNode("Error loading");
+        document.getElementById("InstructionsContainer").appendChild(formulaObj);
+        return
+    }
+
     let i = document.getElementById("InstructionsContainer");
     i.remove();
     div = document.createElement("div");
