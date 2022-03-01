@@ -33,6 +33,13 @@ function GotTriangle(data){
 }
 
 function addTriangleToScreen(array){
+
+    let i = document.getElementById("TriangleContainer");
+    i.remove();
+    div = document.createElement("div");
+    document.body.appendChild(div);
+    div.setAttribute("id", "TriangleContainer");
+
     for(let x = 0; x < array.length; x++){
         let text = "";
         for (let y = 0; y < array[x].length; y++){
