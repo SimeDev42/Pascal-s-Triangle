@@ -15,11 +15,11 @@ The API where all the requests are sent is https://pascal-s-triangle-api.anvil.a
 It is hosted on https://anvil.works/
 
 It responds the the following requests:
-- To get the formula to solve the (n) power of a binome:
+- To get the formula to solve the (n) power of a binomial:
 
 &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;/_/api/get_formula_at_exp?n={}&#xa0;&#xa0;&#xa0;Where "n" is the exponent
 
-- To solve the (n) power of a binome:
+- To solve the (n) power of a binomial:
 
 &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;/_/api/solve?a={}&b={}&n={}&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;Where "a" and "b" are the 2 monoms and "n" is the exponent
 
@@ -28,3 +28,8 @@ It responds the the following requests:
 &#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;/_/api/get_triangle_at_exp?n={}&#xa0;&#xa0;&#xa0;&#xa0;Where "n" is the exponent
 
 <b>Note: the {} should be changed to an actual monome</b>
+
+Examples:
+- If I want to get the solution of (a^2+1)^3 I will do a GET request to https://pascal-s-triangle-api.anvil.app/_/api/solve?a=a^2&b=1&n=3
+- If I want to get formula of the cube of a binomial I will do a GET request to https://pascal-s-triangle-api.anvil.app/_/api/get_formula_at_exp?n=3
+- If I want to get the Pascal's triangle all the way to the 5th row I will do a GET request to https://pascal-s-triangle-api.anvil.app/_/api/get_triangle_at_exp?n=5
